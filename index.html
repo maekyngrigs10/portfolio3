@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            <link href="index.css">
-            <script href="js.js"></script>
-            Portfolio v.3
-            </title>
+        <title>Portfolio v.3</title>
+        <link rel="stylesheet" href="index.css" >
     </head>
     <body>
-        <div class="header">
-            <h1 class="name">Maekyn Grigsby</h1>
-            <h2 class="sub">Computer Science Student</h2>
+
+<!--This is the nav bar w/ the different sections-->
+
+          <div id="navbar">
+            <a class="active" href="#head">Home</a>
+            <a href="#abtMe">About Me</a>
+            <a href="#prjs">Projects</a>
+            <a href="#cntme">Contact Me</a>
+          </div>
+
+<!--This is the header w/ my name and what i am-->
+
+          <div class="header" id="head">
+            <h2>Maekyn Grigsby</h2>
+            <p>Computer Science Student</p>
+          </div>
+
+<!--This is the about me section w/ who I am-->
+
+        </div>
+        <div class="aboutMe" id="abtMe">
+            <h2> About Me</h2>
+            <p>I am Maekyn, and I am computer science. Yep you red that right. I am all of comp sci.</p>
         </div>
 
+<!--This is the projects section w/ all that i have done-->
+
+        <div class="projects" id="prjs">
+            <h2> Projects</h2>
+            <p>These are all my projects enjoy</p>
+        </div>
+
+<!--This is the contact me section w/ my contact information-->
+
+        <div class="contactMe" id="cntme">
+            <h2> Contact Me</h2>
+            <p>You like what you see? Let me know, there's more where that came from</p>
+        </div>
+        
     </body>
+
+<!-- this is the javascript/jquery portion -->
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+    </script>
 </html>
