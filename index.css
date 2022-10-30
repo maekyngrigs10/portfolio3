@@ -8,12 +8,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
   
+/*
+Header Section
+*/
   .header {
     background-color: #f1f1f1;
-    padding: 30px;
+    padding: 100px;
     text-align: center;
   }
-  
+
+/*
+Navbar section
+*/
   #navbar {
     overflow: hidden;
     background-color: #333;
@@ -39,20 +45,19 @@ body {
     color: white;
   }
   
-  .content {
-    padding: 16px;
-  }
-  
   .sticky {
     position: fixed;
     top: 0;
     width: 100%;
   }
   
-  .sticky + .content {
-    padding-top: 60px;
+  .sticky {
+    padding-top: 10px;
   }
 
+/*
+Div Grid for About Me Section
+*/
   .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -67,14 +72,84 @@ body {
     .div4 { grid-area: 3 / 2 / 4 / 3; }
     .div5 { grid-area: 2 / 2 / 3 / 3; }
 
+/*
+Random Formatting for divs
+*/
+
 div {
-    margin:10px;
+    padding:10px;
 }
 
-.other {
+/*
+Dark Mode Section
+*/
+.body-dark-mode {
+    background-color: #313639;
+    color:#ffffff;
+}
+/*
+Project cards section
+*/
+  .container {
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    left: calc(50% - 300px);
+    display: flex;
+  }
+  
+  .card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .card:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    font-weight: 100;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 30px;
+    padding:10px;
+  }
+
+  .def {
+    position:absolute;
+    top: 100px;
+    font-size: 15px;
+    padding:10px;
+  }
+
+/*
+Formatting Stuff
+*/
+  .nav {
     float:right;
-}
-
-.modes {
-    
-}
+  }
+  .other {
+    float:left;
+  }
+  

@@ -3,24 +3,27 @@
     <head>
         <title>Portfolio v.3</title>
         <link rel="stylesheet" href="index.css" >
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
     </head>
     <body>
 
 <!--This is the nav bar w/ the different sections-->
 
           <div id="navbar">
-            <a class="active" href="#head">Home</a>
-            <a href="#abtMe">About Me</a>
-            <a href="#prjs">Projects</a>
-            <a href="#cntme">Contact Me</a>
+            <section class="nav" id="nav">
+                <a class="home" href="#head">Home</a>
+                <a class="about" href="#abtMe">About Me</a>
+                <a class="projects" href="#prjs">Projects</a>
+                <a class="contact" href="#cntme">Contact Me</a>
+            </section>
             <section class="other" id="other">
-                <a href="" class="mode"></a>
+                <a onclick="darkmodetoggle()" class="mode"></a>
             </section>
           </div>
 
 <!--This is the header w/ my name and what i am-->
 
-          <div class="header" id="head">
+          <div class="header" id="head" >
             <h2>Maekyn Grigsby</h2>
             <p>Computer Science Student</p>
           </div>
@@ -28,28 +31,100 @@
 <!--This is the about me section w/ who I am-->
 
         </div>
-        <div class="aboutMe" id="abtMe">
+        <div class="aboutMe" id="abtMe" >
             <h2> About Me</h2>
             <p>I am Maekyn, and I am computer science. Yep you red that right. I am all of comp sci.</p>
         </div>
         <div class="parent">
-            <div class="div1">experience/technical skills</div>
-            <div class="div2"> general info</div>
+            <div class="div1">
+                <h2 class="exp">Experience</h2>
+                <h3>Nextech Intern</h3>
+                <p>Web Development Internship</p>
+                <p>June - July 2022</p>
+                <h2 class="skills">Technical Skills</h2>
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                </ul>
+                <h3>Other</h3>
+                <ul>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="div2"> general info
+                <h3>School: </h3>
+                    <ul>
+                        <li>New Tech Institute</li>
+                        <li> SICTC - Computer Science Course</li>
+                    </ul>
+                    <h3>GPA :<p>4.0</p></h3>
+                <h3> Extracurriculars</h3>
+                    <ul>
+                        <li>Evansville Central HS Varsity Softball</li>
+                        <ul>
+                            <li>Aug 2020 - Present</li>
+                        </ul>
+                        <li>Class of '24 Class Officer</li>
+                        <ul>
+                            <li>Oct 2021 - Present</li>
+                        </ul>
+                    </ul>
+            </div>
             <div class="div3"> maekyn</div>
             <div class="div4"> grigsby</div>
-            <div class="div5"> photos</div>
+            <div class="div5"> 
+                <section class="photos">
+                    photos
+                </section>
+            </div>
             </div>
 
 <!--This is the projects section w/ all that i have done-->
 
-        <div class="projects" id="prjs">
+        <div class="projects" id="prjs" >
             <h2> Projects</h2>
-            <p>These are all my projects enjoy</p>
+            <p>These are some of my projects enjoy</p>
         </div>
-
+<!-- This is the project cards -->
+        <div class="container">
+            <div class="card">
+                <h2 class="title">Combo Menu</h2>
+                <h3 class="def">Type:<br>Python</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Portfolio</h2>
+                <h3 class="def">Type:<br>HTML<br><br>CSS<br><br>JavaScript</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Adventure Game</h2>
+                <h3 class="def">Type:<br>Python</h3>
+                <p class="file"></p>
+            </div>
+            <div class="card">
+                <h2 class="title">Tic-Tac-Toe</h2>
+                <h3 class="def">Type:<br>Python</h3>
+            </div>
+        </div>
+            
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
 <!--This is the contact me section w/ my contact information-->
 
-        <div class="contactMe" id="cntme">
+        <div class="contactMe" id="cntme" >
             <h2> Contact Me</h2>
             <p>You like what you see? Let me know, there's more where that came from</p>
         </div>
@@ -58,6 +133,7 @@
 
 <!-- this is the javascript/jquery portion -->
     <script>
+//This is so it scrolls when a button is clicked on the navbar
     window.onscroll = function() {myFunction()};
 
     var navbar = document.getElementById("navbar");
@@ -70,11 +146,13 @@
         navbar.classList.remove("sticky");
     }
 }
-    $(".mode").click(function(){
-        $("")
-    });
-    
-    
+//this is the dark mode function
+    function darkmodetoggle() {
+        var body = document.body;
+        body.classList.toggle("body-dark-mode");
+    }
+
+        
     </script>
 </html>
 
