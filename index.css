@@ -197,7 +197,7 @@ Contact form
 * {
     margin: 0;
     padding: 0;
-    border-size: border-box;
+    border-style: border-box;
   }
   
   /* body {
@@ -317,7 +317,7 @@ Contact form
     .cards .row input[type="submit"] {
       width: 100%;
     }
-  }
+  
 
 
 /*
@@ -326,5 +326,23 @@ random
 
 .abt {
     color: #ffece8;
-    text-shadow: 4px 4px 13px #744e39;
+    text-shadow: 4px 4px 13px #84614e;
+}
+
+.projects {
+  text-align: center;
+  text-shadow: 4px 4px 13px #84614e;
+}
+
+.aboutMe {
+  text-align:center;
+}
+
+.contact {
+  text-align:center;
+  text-shadow: 4px 4px 13px #84614e;
+}
+
+.cards{
+  margin-left: 15%;
 }
