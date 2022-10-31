@@ -4,6 +4,7 @@
         <title>Portfolio v.3</title>
         <link rel="stylesheet" href="index.css" >
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+        <link rel="icon" href="https://i.ibb.co/9TQTFV5/Untitled-design-1-removebg-preview.png">
     </head>
     <body>
 
@@ -32,8 +33,7 @@
 
         </div>
         <div class="aboutMe" id="abtMe" >
-            <h2> About Me</h2>
-            <p>I am Maekyn, and I am computer science. Yep you red that right. I am all of comp sci.</p>
+            <h2 class="abt"> About Me</h2>
         </div>
         <div class="parent">
             <div class="div1">
@@ -54,13 +54,14 @@
                     <li>Python</li>
                 </ul>
             </div>
-            <div class="div2"> general info
+            <div class="div2">
+                <h2 class="exp">About Me</h2>
                 <h3>School: </h3>
                     <ul>
                         <li>New Tech Institute</li>
                         <li> SICTC - Computer Science Course</li>
                     </ul>
-                    <h3>GPA :<p>4.0</p></h3>
+                    <h3>GPA : 4.0</h3>
                 <h3> Extracurriculars</h3>
                     <ul>
                         <li>Evansville Central HS Varsity Softball</li>
@@ -73,11 +74,11 @@
                         </ul>
                     </ul>
             </div>
-            <div class="div3"> maekyn</div>
-            <div class="div4"> grigsby</div>
+            <div class="div3"> Maekyn</div>
+            <div class="div4"> Grigsby</div>
             <div class="div5"> 
                 <section class="photos">
-                    photos
+                    <img src="https://i.ibb.co/L81D20y/Ready-Player-Me-Avatar.png" alt="Ready-Player-Me-Avatar" >
                 </section>
             </div>
             </div>
@@ -108,14 +109,10 @@
                 <h3 class="def">Type:<br>Python</h3>
             </div>
         </div>
-            
+        <div class="github">
+            <h2><a href="github.com/maekyngrigs10" class="github" target="_blank"> My Github </a></h2>
+        </div>
     <div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <br>
         <br>
         <br>
@@ -125,10 +122,50 @@
 <!--This is the contact me section w/ my contact information-->
 
         <div class="contactMe" id="cntme" >
-            <h2> Contact Me</h2>
-            <p>You like what you see? Let me know, there's more where that came from</p>
         </div>
-        
+        <div class="cards">
+            <h2>Contact Me</dh2>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text">
+                </div>
+              </div>
+          
+              <div class="col">
+                <div class="form-group">
+                  <label>Last name</label>
+                  <input type="text">
+                </div>
+              </div>
+          
+              <div class="col">
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="text">
+                </div>
+              </div>
+          
+              <div class="col">
+                <div class="form-group">
+                  <label>Phone</label>
+                  <input type="text">
+                </div>
+              </div>
+          
+              <div class="col">
+                <div class="form-group">
+                  <label>Message</label>
+                  <textarea></textarea>
+                </div>
+              </div>
+          
+              <div class="col">
+                <input type="submit" value="Submit">
+              </div>
+            </div>
+          </div>
     </body>
 
 <!-- this is the javascript/jquery portion -->
@@ -146,15 +183,7 @@
         navbar.classList.remove("sticky");
     }
 }
-//this is the dark mode function
-    function darkmodetoggle() {
-        var body = document.body;
-        body.classList.toggle("body-dark-mode");
-    }
-
         
     </script>
 </html>
 
-<!-- <a href="https://www.flaticon.com/free-icons/mode" title="mode icons">Mode icons created by adriansyah - Flaticon</a> dark mode icon-->
-<!-- <a href="https://www.flaticon.com/free-icons/light" title="light icons">Light icons created by Freepik - Flaticon</a> light mode icon-->

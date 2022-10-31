@@ -6,29 +6,36 @@ body {
     margin: 0;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #c09984;
+    color: #f7e8e1;
   }
   
 /*
 Header Section
 */
   .header {
-    background-color: #f1f1f1;
+    background-color: #c19f8b;
     padding: 100px;
     text-align: center;
+    font-size: 50px;
+    border: solid #b18269;
   }
 
 /*
 Navbar section
 */
   #navbar {
-    overflow: hidden;
-    background-color: #333;
+    /* overflow: hidden; */
+    background-color: #c09984;
+    color:#f7e8e1;
+    border: solid #b18269;
+    z-index:3;
   }
   
   #navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #E5E3D7;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -36,13 +43,13 @@ Navbar section
   }
   
   #navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgb(224, 177, 151);
+    color: #f1e3dc;
   }
   
   #navbar a.active {
-    background-color: #07004a;
-    color: white;
+    background-color: #C09984;
+    color: #E5E3D7;
   }
   
   .sticky {
@@ -61,16 +68,43 @@ Div Grid for About Me Section
   .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr 50px;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     }
     
-    .div1 { grid-area: 1 / 3 / 4 / 4; }
-    .div2 { grid-area: 1 / 1 / 4 / 2; }
-    .div3 { grid-area: 1 / 2 / 2 / 3; }
-    .div4 { grid-area: 3 / 2 / 4 / 3; }
-    .div5 { grid-area: 2 / 2 / 3 / 3; }
+    .div1 { 
+        grid-area: 1 / 3 / 4 / 4; 
+        border: solid #b18269;
+    }
+    .div2 { 
+        grid-area: 1 / 1 / 4 / 2; 
+        border: solid #b18269;
+    }
+    .div3 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        border: solid #b18269;
+    }
+    .div4 { 
+        grid-area: 3 / 2 / 4 / 3; 
+        border: solid #b18269;
+    }
+    .div5 { 
+        grid-area: 2 / 2 / 3 / 3; 
+        border: solid #b18269;
+    }
+
+
+.div3 {
+    text-align:center;
+    font-size: 30px;
+}
+
+.div4 {
+    text-align:center;
+    font-size: 30px;
+}
+
 
 /*
 Random Formatting for divs
@@ -78,20 +112,14 @@ Random Formatting for divs
 
 div {
     padding:10px;
+    /* border: solid #b18269; */
 }
 
-/*
-Dark Mode Section
-*/
-.body-dark-mode {
-    background-color: #313639;
-    color:#ffffff;
-}
 /*
 Project cards section
 */
   .container {
-    position: absolute;
+    position: relative;
     height: 300px;
     width: 600px;
     left: calc(50% - 300px);
@@ -102,9 +130,9 @@ Project cards section
     display: flex;
     height: 280px;
     width: 200px;
-    background-color: #17141d;
+    background-color: #d4b8a5;
     border-radius: 10px;
-    box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #b18269;
   /*   margin-left: -50px; */
     transition: 0.4s ease-out;
     position: relative;
@@ -153,3 +181,151 @@ Formatting Stuff
     float:left;
   }
   
+  .github {
+    text-align:center;
+    color:#E5E3D7;
+    text-decoration: wavy;
+  }
+
+  .github:hover {
+    color:#b18269;
+  }
+
+/*
+Contact form
+*/
+* {
+    margin: 0;
+    padding: 0;
+    border-size: border-box;
+  }
+  
+  /* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   */
+  .cards {
+    width: 70%;
+    padding: 30px 90px 90px 90px;
+    border: 6px solid #c09984;
+    box-shadow: 20px 20px 0 #c09984;
+    border-radius: 50px;
+    position: relative;
+  }
+  
+  .cards h2 {
+    color:#d9c2b0;
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+  
+  .cards .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .cards .row .col {
+    position: relative;
+    width: 100%;
+    margin: 30px 20px 40px 0;
+    transition: 0.5s;
+  }
+  
+  .cards .row .form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #e5e3d7;
+  }
+  
+  .cards .row .form-group input,
+  .cards .row .form-group textarea {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 0 10px 20px;
+    border: 5px solid #d9c2b0;
+    box-shadow: 10px 10px 0 #c09984;
+    color: #d9c2b0;
+    border-radius: 50px;
+  }
+  
+  .cards .row .form-group label {
+    line-height: 40px;
+    color: #d9c2b0;
+    font-size: 24px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+  }
+  
+  .row .col:nth-child(6) {
+    margin-top: 64px;
+  }
+  
+  .cards .row .form-group input:focus,
+  .cards .row .form-group textarea:focus {
+    border: 5px solid #e4c7b7;
+    transition: all 0.5s;
+  }
+  
+  .cards .row input[type="submit"] {
+    border: 5px solid #d9c2b0;
+    box-shadow: 10px 10px 0 #c09984;
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: #eacbbb;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 45px;
+    transition: all 0.4s;
+  }
+  
+  .cards .row input[type="submit"]:hover {
+    border: 5px solid #fbd1ba;
+    color: #d9c2b0;
+    transition: all 0.4s;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .cards .row {
+      grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+    }
+    
+    .cards {
+      padding: 20px;
+    }
+    
+    .cards h2 {
+      font-size: 34px;
+    }
+    
+    .cards .row input[type="submit"] {
+      width: 100%;
+    }
+  }
+
+
+/*
+random
+*/
+
+.abt {
+    color: #ffece8;
+    text-shadow: 4px 4px 13px #744e39;
+}
