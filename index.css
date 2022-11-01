@@ -129,12 +129,10 @@ Project cards section
     background-color: #d4b8a5;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #b18269;
-  /*   margin-left: -50px; */
+    margin-left: -50px;
     transition: 0.4s ease-out;
     position: relative;
     left: 0px;
-    margin-left: auto;
-    margin-right: auto;
     
   }
   
@@ -193,14 +191,6 @@ Formatting Stuff
     text-shadow: 4px 4px 13px #E5E3D7;
   }
 
-/*
-Contact form
-*/
-* {
-    margin: 0;
-    padding: 0;
-    border-style: border-box;
-  }
   
   /* body {
     display: flex;
@@ -303,10 +293,11 @@ Contact form
     transition: all 0.4s;
   }
   
-  /* @media screen and (max-width: 900px) {
+  @media screen and (max-width: 900px) {
     .cards .row {
       grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
-    } */
+    }
+  }
     
     .cards {
       padding: 20px;
@@ -360,10 +351,10 @@ Random Extras
 .center {
   display:block;
   width:75%;
-  height:75%;
+  height:50%;
   margin-left: auto;
   margin-right:auto;
-  margin-top: 15%;
+  margin-top: 50%;
   border: solid 3px #84614e;
 }
 
