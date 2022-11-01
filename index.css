@@ -84,27 +84,19 @@ Div Grid for About Me Section
     .div3 { 
         grid-area: 1 / 2 / 2 / 3; 
         border: solid #b18269;
+        text-align:center;
+      font-size: 30px;
     }
     .div4 { 
         grid-area: 3 / 2 / 4 / 3; 
         border: solid #b18269;
+        text-align:center;
+        font-size: 30px;
     }
     .div5 { 
         grid-area: 2 / 2 / 3 / 3; 
         border: solid #b18269;
     }
-
-
-.div3 {
-    text-align:center;
-    font-size: 30px;
-}
-
-.div4 {
-    text-align:center;
-    font-size: 30px;
-}
-
 
 /*
 Random Formatting for divs
@@ -112,7 +104,11 @@ Random Formatting for divs
 
 div {
     padding:10px;
-    /* border: solid #b18269; */
+    line-height: normal;
+}
+
+ul {
+  padding: 20px;
 }
 
 /*
@@ -185,10 +181,13 @@ Formatting Stuff
     text-align:center;
     color:#E5E3D7;
     text-decoration: wavy;
+    text-shadow: 4px 4px 13px #84614e;
   }
 
   .github:hover {
     color:#b18269;
+    transition-duration: 3s;
+    text-shadow: 4px 4px 13px #E5E3D7;
   }
 
 /*
@@ -344,5 +343,13 @@ random
 }
 
 .cards{
-  margin-left: 15%;
+  margin-left: 17%;
+}
+
+/*
+Random Extras
+*/
+
+.exp {
+  text-shadow: 4px 4px 13px #84614e;
 }
